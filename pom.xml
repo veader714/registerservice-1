@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>edu.uark</groupId>
-	<artifactId>registerservice</artifactId>
+	<artifactId>registerservice-1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
