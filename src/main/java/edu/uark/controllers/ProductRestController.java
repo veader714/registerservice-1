@@ -42,7 +42,6 @@ public class ProductRestController {
 	public Product putActivity(@RequestBody Product product) {
 		return (new ProductSaveCommand()).
 			setApiProduct(product).
-			execute();
 	}
 
 	@ResponseBody
