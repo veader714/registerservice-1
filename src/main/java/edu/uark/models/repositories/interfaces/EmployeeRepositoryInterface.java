@@ -1,5 +1,9 @@
 package edu.uark.models.repositories.interfaces;
 
-public class EmployeeRepositoryInterface extends BaseRepositoryInterface<EmployeeEntity>{
+
+import edu.uark.dataaccess.repository.BaseRepositoryInterface;
+import edu.uark.models.entities.EmployeeEntity;
+
+public interface EmployeeRepositoryInterface extends BaseRepositoryInterface<EmployeeEntity>{
 	EmployeeEntity byEmployeeId(String employeeId);
 }
