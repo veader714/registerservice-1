@@ -1,5 +1,6 @@
 package edu.uark.models.api;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 import org.apache.commons.lang3.StringUtils;
@@ -60,11 +61,21 @@ public class Employee {
 	
 	
 	public Employee(EmployeeEntity employeeEntity){
-		
+		this.FirstName = employeeEntity.getFirstName();
+		this.LastName = employeeEntity.getLastName();
+		this.id = employeeEntity.getId();
+		this.EmployeeId = employeeEntity.getEmployeeId();
+		this.apiRequestMessage = StringUtils.EMPTY;
+		this.apiRequestStatus = EmployeeApiRequestStatus.OK;
 	}
 	
 	public Employee(){
-		
+		this.FirstName = "";
+		this.LastName = "";
+		this.id = new UUID(0, 0);
+		this.EmployeeId = "";
+		this.apiRequestMessage = StringUtils.EMPTY;
+		this.apiRequestStatus = EmployeeApiRequestStatus.OK;
 	}
 	
 	

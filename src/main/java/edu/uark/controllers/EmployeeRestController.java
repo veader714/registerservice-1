@@ -15,7 +15,7 @@ import edu.uark.commands.products.ProductsQuery;
 import edu.uark.models.api.Employee;
 
 public class EmployeeRestController {
-	@RequestMapping(value = "/apiv0/{employeeId}", method = RequestMethod.GET)
+	@RequestMapping(value = "/apiv0/{employeeId}", method = RequestMethod.GET)  //Changed to a post request
 	public Employee getEmployee(@PathVariable UUID employeeId) {
 		return (new EmployeeQuery()).setEmployeeId(employeeId).execute();
 	}
